@@ -911,16 +911,11 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.icon_box:hover .svg path,
-.icon_box:hover .svg rect,
-.icon_box:hover .svg polygon
+.service:hover .svg path,
+.service:hover .svg rect,
+.service:hover .svg polygon
 {
 	fill: #1befc5;
-}
-.icon_box svg
-{
-	height: 62px;
-	width: auto;
 }
 .service_title
 {
