@@ -895,6 +895,11 @@ section
 {
 	max-width: 100%;
 }
+.service_icon svg
+{
+	max-width: 100%;
+	height: auto;
+}
 .svg path,
 .svg rect,
 .svg polygon
