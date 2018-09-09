@@ -9,7 +9,8 @@
 3. Init Menu
 4. Init Dropdown
 5. Init SVG
-6. Init Magic
+6. Init Video
+7. Init Magic
 
 
 ******************************/
@@ -47,6 +48,7 @@ $(document).ready(function()
 	initMenu();
 	initDropdown();
 	initSvg();
+	initVideo();
 	initMagic();
 
 	/* 
@@ -162,9 +164,26 @@ $(document).ready(function()
 		});
 	}
 
+	/* 
+
+	6. Init Video
+
+	*/
+
+	function initVideo()
+	{
+		$(".vimeo").colorbox(
+		{
+			iframe:true,
+			innerWidth:640,
+			innerHeight:409,
+			maxWidth: '90%'
+		});
+	}
+
 	/*
 
-	6. Init Magic
+	7. Init Magic
 
 	*/
 

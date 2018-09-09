@@ -9,7 +9,8 @@
 3. Init Menu
 4. Init Dropdown
 5. Init SVG
-6. Init Magic
+6. Init Tabs
+7. Init Magic
 
 
 ******************************/
@@ -47,6 +48,7 @@ $(document).ready(function()
 	initMenu();
 	initDropdown();
 	initSvg();
+	initTabs();
 	initMagic();
 
 	/* 
@@ -162,9 +164,32 @@ $(document).ready(function()
 		});
 	}
 
+	/* 
+
+	6. Init Tabs
+
+	*/
+
+	function initTabs()
+	{
+		if($('.tab').length)
+		{
+			$('.tab').on('click', function()
+			{
+				$('.tab').removeClass('active');
+				$(this).addClass('active');
+				var clickedIndex = $('.tab').index(this);
+
+				var panels = $('.tab_panel');
+				panels.removeClass('active');
+				$(panels[clickedIndex]).addClass('active');
+			});
+		}
+	}
+
 	/*
 
-	6. Init Magic
+	7. Init Magic
 
 	*/
 

@@ -10,12 +10,9 @@
 3. Header
 4. Menu
 5. Home
-6. Intro
-7. Services
-8. Pricing
-9. Why Choose Us
-10. CTA
-11. Footer
+6. Domain Search
+7. Contact
+8. Footer
 
 
 ******************************/
@@ -63,7 +60,7 @@ p
 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
-	line-height: 1.8666;
+	line-height: 1.9;
 	font-weight: 400;
 	color: #656566;
 	-webkit-font-smoothing: antialiased;
@@ -117,7 +114,8 @@ p a:hover::after
 }
 ::selection
 {
-	
+	background: rgba(27,239,197,0.75);
+	color: #FFFFFF;
 }
 p::selection
 {
@@ -507,7 +505,8 @@ section
 .home
 {
 	width: 100%;
-	height: 821px;
+	height: 425px;
+	overflow: hidden;
 }
 .home_background
 {
@@ -539,31 +538,31 @@ section
 }
 .cloud_1
 {
-	top: 147px;
+	top: 17px;
 	left: -138px;
-	-webkit-animation: cloud_anim 60s -39s linear infinite;
-	animation: cloud_anim 60s -39s linear infinite;
+	-webkit-animation: cloud_anim 60s -50s linear infinite;
+	animation: cloud_anim 60s -50s linear infinite;
 }
 .cloud_2
 {
-	top: 204px;
+	top: -38px;
 	left: -138px;
-	-webkit-animation: cloud_anim 60s -6s linear infinite;
-	animation: cloud_anim 60s -6s linear infinite;
+	-webkit-animation: cloud_anim 60s -14s linear infinite;
+	animation: cloud_anim 60s -14s linear infinite;
 }
 .cloud_3
 {
-	top: 332px;
+	top: 165px;
 	left: -138px;
-	-webkit-animation: cloud_anim 60s -45s linear infinite;
-	animation: cloud_anim 60s -45s linear infinite;
+	-webkit-animation: cloud_anim 60s -40s linear infinite;
+	animation: cloud_anim 60s -40s linear infinite;
 }
 .cloud_4
 {
-	top: 353px;
+	top: 146px;
 	left: -138px;
-	-webkit-animation: cloud_anim 60s -15s linear infinite;
-	animation: cloud_anim 60s -15s linear infinite;
+	-webkit-animation: cloud_anim 60s -8s linear infinite;
+	animation: cloud_anim 60s -8s linear infinite;
 	z-index: 2;
 }
 @-webkit-keyframes cloud_anim
@@ -592,34 +591,61 @@ section
 {
 	position: absolute;
 	left: 0;
-	top: 31.9%;
+	top: 53.88%;
 	width: 100%;
 	z-index: 5;
 }
 .home_content
 {
-
+	
 }
 .home_title
 {
-	font-size: 60px;
+	font-size: 48px;
 	font-weight: 600;
 	color: #FFFFFF;
-	line-height: 1.2;
+	line-height: 0.75;
 }
-.home_text
+.breadcrumbs
 {
-	max-width: 750px;
+	margin-top: 15px;
+}
+.breadcrumbs ul li,
+.breadcrumbs ul li a
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #FFFFFF;
+}
+.breadcrumbs ul li,
+.breadcrumbs ul li a:hover
+{
+	color: #1befc5;
+}
+.breadcrumbs ul li:not(:last-of-type)::after
+{
+	display: inline-block;
 	font-size: 14px;
 	color: #FFFFFF;
-	line-height: 2.14;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 9px;
+	font-weight: 500;
+	content: '/';
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/*********************************
+6. Domain Search
+*********************************/
+
+.domain_search
+{
+	width: 100%;
+	background: #25103f;
+	z-index: 1;
 }
 .domain_search_form_container
 {
-	margin-top: 69px;
+	height: 152px;
 }
 .domain_search_form
 {
@@ -759,458 +785,176 @@ section
 }
 
 /*********************************
-6. Intro
+7. Contact
 *********************************/
 
-.intro
+.contact
 {
 	width: 100%;
 	background: #FFFFFF;
-	padding-top: 96px;
-	padding-bottom: 97px;
+	padding-top: 95px;
+	padding-bottom: 96px;
 }
-.intro_row
+.contact_title
 {
-	margin-top: 98px;
-}
-.intro_dots
-{
-	position: absolute;
-    top: -137px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-	background-size: contain;
-}
-.intro_icon_container
-{
-	width: 143px;
-	height: 143px;
-	border-radius: 50%;
-	background: #d5dfe3;
-}
-.intro_col:nth-child(3) .intro_icon_container
-{
-	background: #1befc5;
-}
-.intro_icon_container::before
-{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	width: 188px;
-	height: 188px;
-	border-radius: 50%;
-	z-index: 0;
-	background: rgba(213,223,227,0.25);
-	content: '';
-}
-.intro_col:nth-child(3) .intro_icon_container::before
-{
-	background: rgba(27,239,197,0.25);
-}
-.intro_icon
-{
-	width: 56px;
-	height: 56px;
-}
-.intro_icon img
-{
-	max-width: 100%;
-}
-.intro_item_content
-{
-	padding-top: 66px;
-}
-.intro_item_title
-{
-	font-size: 24px;
-	font-weight: 700;
-	color: #1f1d22;
-	line-height: 1.2;
-}
-.intro_item_text
-{
-	margin-top: 27px;
-}
-.intro_button
-{
-	width: 257px;
-	height: 63px;
-	border-radius: 12px;
-	background: #715691;
-	margin-top: 86px;
-}
-.intro_button:hover
-{
-	background: #1befc5;
-}
-.intro_button a
-{
-	display: block;
-	font-size: 16px;
-	font-weight: 700;
-	color: #FFFFFF;
-	line-height: 63px;
-}
-
-/*********************************
-7. Services
-*********************************/
-
-.services
-{
-	width: 100%;
-	padding-top: 96px;
-	padding-bottom: 127px;
-}
-.services .section_title h2
-{
-	color: #FFFFFF;
-}
-.services_row
-{
-	margin-top: 95px;
-}
-.service
-{
-	width: 100%;
-	background: #FFFFFF;
-	border-radius: 12px;
-	padding-top: 58px;
-	padding-bottom: 66px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border: solid 2px transparent;
-}
-.service:hover
-{
-	border-color: #1befc5;
-}
-.service_icon
-{
-	width: 75px;
-	height: 75px;
-}
-.service_icon img
-{
-	max-width: 100%;
-}
-.service_icon svg
-{
-	max-width: 100%;
-	height: auto;
-}
-.svg path,
-.svg rect,
-.svg polygon
-{
-	fill: #778990;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.service:hover .svg path,
-.service:hover .svg rect,
-.service:hover .svg polygon
-{
-	fill: #1befc5;
-}
-.service_title
-{
-	margin-top: 39px;
-}
-.service_text
-{
-	margin-top: 19px;
-}
-.service_button
-{
-	position: absolute;
-	bottom: -32px;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	width: 157px;
-	height: 63px;
-	background: #f4f7f8;
-	border-radius: 12px;
-}
-.service_button:hover
-{
-	background: #1befc5;
-}
-.service_button a
-{
-	display: block;
-	font-size: 16px;
-	font-weight: 600;
-	color: #656566;
-	line-height: 63px;
-}
-.service_button:hover a
-{
-	color: #1f1d22;
-}
-
-/*********************************
-8. Pricing
-*********************************/
-
-.pricing
-{
-	width: 100%;
-	background: #FFFFFF;
-	padding-top: 94px;
-	padding-bottom: 98px;
-}
-.pricing_container
-{
-	width: 100%;
-	border-radius: 12px;
-	border: solid 2px #d5dfe3;
-	overflow: hidden;
-}
-.pricing_item
-{
-	width: 25%;
-}
-.pricing_item:not(:last-child)
-{
-	border-right: solid 2px #d5dfe3;
-}
-.pricing_title
-{
-	height: 129px;
-	background: #4d1d85;
 	font-size: 30px;
 	font-weight: 700;
-	color: #FFFFFF;
-	line-height: 129px;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+	color: #1f1d22;
+	line-height: 0.75;
 }
-.pricing_item:hover .pricing_title
+.contact_text
+{
+	margin-top: 33px;
+}
+.contact_logo
+{
+	margin-top: 29px;
+}
+.contact_logo a
+{
+	font-size: 36px;
+	font-weight: 600;
+	color: #7836c6;
+}
+.contact_logo a span
 {
 	color: #1befc5;
 }
-.pricing_content
+.contact_list
 {
-	padding-top: 50px;
-	padding-bottom: 37px;
+	margin-top: 22px;
+	max-width: 160px;
 }
-.package_price
+.contact_list ul li
 {
-	font-size: 36px;
-	font-weight: 700;
-	color: #715691;
-}
-.package_price span
-{
-	display: inline-block;
-	position: relative;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 500;
 	color: #1f1d22;
-	-webkit-transform: translate(-5px, 12px);
-	-moz-transform: translate(-5px, 12px);
-	-ms-transform: translate(-5px, 12px);
-	-o-transform: translate(-5px, 12px);
-	transform: translate(-5px, 12px);
+	line-height: 1.6;
 }
-.pricing_list
+.contact_list ul li:not(:last-of-type)
 {
-	margin-top: 89px;
+	margin-bottom: 25px;
 }
-.pricing_list ul li:not(:last-child)
+.contact_social
 {
-	margin-bottom: 26px;
+	margin-top: 43px;
 }
-.pricing_list ul li span
+.contact_social ul li:not(:last-child)
 {
-	font-size: 16px;
-	font-weight: 500;
-	color: #656566;
-	margin-left: 10px;
+	margin-right: 22px;
 }
-.pack_ok span
+.contact_social ul li a i
 {
-	color: #1f1d22 !important;
-	font-weight: 600 !important;
+	padding: 5px;
+	color: #474747;
 }
-.pricing_button
+.contact_social ul li a i:hover
 {
-	width: 132px;
-	height: 53px;
-	margin-top: 75px;
-	background: #1befc5;
-	border-radius: 12px;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.pricing_button a
-{
-	display: block;
-	font-size: 16px;
-	font-weight: 700;
-	color: #35214d;
-	line-height: 53px;
-}
-.pricing_button:hover
-{
-	background: #7836c6;
-}
-.pricing_button:hover a
-{
-	color: #FFFFFF;
-}
-
-/*********************************
-9. Why Choose Us
-*********************************/
-
-.choice
-{
-	width: 100%;
-	background: #f6f8fb;
-}
-.choice_image
-{
-	position: absolute;
-	bottom: 0;
-	left: 25px;
-}
-.choice_content
-{
-	padding-top: 94px;
-	padding-bottom: 91px;
-}
-.choice_text
-{
-	margin-top: 51px;
-}
-.choice_text p
-{
-	font-weight: 500;
-}
-.choice_list
-{
-	margin-top: 52px;
-}
-.choice_icon
-{
-	width: 64px;
-	height: 64px;
-}
-.choice_icon img
-{
-	max-width: 100%;
-}
-.choice_title
-{
-	font-size: 18px;
-	font-weight: 500;
-	color: #1f1d22;
-	margin-top: 20px;
-}
-
-/*********************************
-10. CTA
-*********************************/
-
-.cta
-{
-	width: 100%;
-	background: #715691;
-}
-.cta_content
-{
-	width: 100%;
-	height: 135px;
-	padding-left: 5px;
-}
-.cta_title
-{
-	display: inline-block;
-	font-size: 36px;
-	font-weight: 700;
-	color: #FFFFFF;
-	line-height: 1.2;
-}
-.cta_price
-{
-	font-size: 48px;
 	color: #1befc5;
-	font-weight: 700;
-	-webkit-transform: translateY(-8px);
-	-moz-transform: translateY(-8px);
-	-ms-transform: translateY(-8px);
-	-o-transform: translateY(-8px);
-	transform: translateY(-8px);
 }
-.cta_price span
+.message_form
 {
-	font-size: 16px;
+	margin-top: 40px;
 }
-.cta_price span:first-child
+.message_input
 {
-	margin-right: 5px;
+	width: 100%;
+	height: 54px;
+	background: #f1f6f8;
+	border: none;
+	outline: none;
+	padding-left: 34px;
 }
-.cta_button
+.message_input:not(:last-child)
 {
-	width: 148px;
-	height: 63px;
-	border-radius: 12px;
+	margin-bottom: 8px;
+}
+.message_input::-webkit-input-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #aeaeae !important;
+}
+.message_input:-moz-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #aeaeae !important;
+}
+.message_input::-moz-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #aeaeae !important;
+} 
+.message_input:-ms-input-placeholder
+{ 
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #aeaeae !important;
+}
+.message_input::input-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	font-style: italic;
+	color: #aeaeae !important;
+}
+.message_textarea
+{
+	height: 250px;
+	padding-top: 17px;
+}
+.message_form_button
+{
+	width: 130px;
+	height: 60px;
 	background: #1befc5;
-	text-align: center;
-	-webkit-transform: translateY(4px);
-	-moz-transform: translateY(4px);
-	-ms-transform: translateY(4px);
-	-o-transform: translateY(4px);
-	transform: translateY(4px);
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	font-weight: 600;
+	color: #1f1d22;
+	border-radius: 12px;
+	cursor: pointer;
+	margin-top: 3px;
 }
-.cta_button a
+.map_row
 {
-	display: block;
-	font-size: 16px;
-	font-weight: 700;
-	color: #35214d;
-	line-height: 63px;
+	margin-top: 96px;
 }
-.cta_button:hover
+.contact_map
 {
-	background: #26064c;
+	width: 100%;
 }
-.cta_button:hover a
+.map
 {
-	color: #FFFFFF;
+	width: 100%;
+}
+.google_map
+{
+	width: 100%;
+	height: 397px;
+}
+.map_container
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#map
+{
+	width: 100%;
+	height: calc(100% + 30px);
 }
 
 /*********************************
-11. Footer
+8. Footer
 *********************************/
 
 .footer
